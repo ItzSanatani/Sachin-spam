@@ -1,3 +1,4 @@
+# ©️ @SACHIN_OWNER || @V_VIP_OWNER
 from telethon import __version__, events, Button
 import asyncio
 import sys
