@@ -1,3 +1,4 @@
+# ©️ @SACHIN_OWNER || @V_VIP_OWNER
 import sys
 import glob
 import asyncio
