@@ -1,3 +1,4 @@
+# ©️ @SACHIN_OWNER || @V_VIP_OWNER
 import logging
 from telethon import TelegramClient
 from os import getenv
