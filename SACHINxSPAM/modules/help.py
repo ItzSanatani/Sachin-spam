@@ -1,3 +1,4 @@
+# ©️ @SACHIN_OWNER || @V_VIP_OWNER
 from telethon import events, Button
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
