@@ -10,7 +10,7 @@
     <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </h2>
 <p align="center">
-  <img src="https://telegra.ph/file/7145ffa058eb45404b2b7.jpg">
+  <img src="https://telegra.ph/file/e8263973ba57a3cf915f9.jpg">
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
