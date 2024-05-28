@@ -16,15 +16,7 @@ pongg = "s ᴀ ɴ ᴀ ᴛ ᴀ ɴ ɪ"
 PIC = "https://telegra.ph/file/57d2b8165f3640f5a3a55.mp4"
 Alivemsg = "sᴀɴᴀᴛᴀɴɪ x ꜱᴘᴀᴍ ʜᴇʀᴇ"
 
-TEXT += f"▬▭▬▭▬▭▬▭▬▭▬▭▬▭\n
-TEXT += f"ㅤㅤ❖ | sᴀɴᴀᴛᴀɴɪ ꭙ ʙᴏᴛ | ❖\n
-TEXT += f"▬▭▬▭▬▭▬▭▬▭▬▭▬▭\n
-TEXT += f"❖ ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ : `4.15.7` \n
-TEXT += f"❖ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ : `M4.0` \n
-TEXT += f"❖ sᴜᴘᴘᴏʀᴛ : [sᴀɴᴀᴛᴀɴɪ ꭙ ʙᴏᴛ](https://t.me/ALL_SANATANI_BOT)\n
-TEXT += f"❖ ᴄʜᴀɴɴᴇʟ : [4ˢᵗ ꭙ ғɪɢʜᴛᴇʀ](https://t.me/+cW07X2RM_IBmYTI1)\n
-TEXT += f"❖ ᴏᴡɴᴇʀ : [sᴀᴄʜɪɴ sᴀɴᴀᴛᴀɴɪ](https://t.me/SACHIN_OWNER)\n
-TEXT += f"▬▭▬▭▬▭▬▭▬▭▬▭▬▭"
+TEXT = f"▬▭▬▭▬▭▬▭▬▭▬▭▬▭\nㅤㅤ❖ | sᴀɴᴀᴛᴀɴɪ ꭙ ʙᴏᴛ | ❖\n▬▭▬▭▬▭▬▭▬▭▬▭▬▭\n❖ ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ : `4.15.7` \n❖ ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ : `M4.0` \n❖ sᴜᴘᴘᴏʀᴛ : [sᴀɴᴀᴛᴀɴɪ ꭙ ʙᴏᴛ](https://t.me/ALL_SANATANI_BOT)\n❖ ᴄʜᴀɴɴᴇʟ : [4ˢᵗ ꭙ ғɪɢʜᴛᴇʀ](https://t.me/+cW07X2RM_IBmYTI1)\n❖ ᴏᴡɴᴇʀ : [sᴀᴄʜɪɴ sᴀɴᴀᴛᴀɴɪ](https://t.me/SACHIN_OWNER)\n▬▭▬▭▬▭▬▭▬▭▬▭▬▭"
                                   
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
@@ -273,4 +265,3 @@ async def restart(e):
             pass
 
         execl(sys.executable, sys.executable, *sys.argv)
-
