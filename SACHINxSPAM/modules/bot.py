@@ -266,3 +266,42 @@ async def restart(e):
             pass
 
         execl(sys.executable, sys.executable, *sys.argv)
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
+async def removesudo(event):
+    if event.sender_id == OWNER_ID:
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
+        sudousers = getenv("SUDO_USERS", default=None)
+        ok = await event.reply(f"**❖ ʀᴇᴍᴏᴠɪɴɢ sᴜᴅᴏ ᴜsᴇʀ ɪɴ sᴀɴᴀᴛᴀɴɪ sᴜᴅᴏ ʟɪsᴛs**")
+        target = ""
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
+        else:
+            await ok.edit("`[HEROKU]:\nPlease set up your HEROKU_APP_NAME`")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            reply_msg = await event.get_reply_message()
+            target = reply_msg.sender_id
+        except:
+            await ok.edit("**❖ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ **")
+            return
+        if str(target) not in sudousers:
+            await ok.edit(f"**❖ sᴀɴᴀᴛᴀɴɪ sᴜᴅᴏ ᴜsᴇʀ ʀᴇᴍᴏᴠᴇᴅ**\n\n**❖ sᴜᴅᴏ ᴜsᴇʀs :** `{newsudo}`️")
+        else:
+            new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
+            await ok.edit(f"❖ ʀᴇᴍᴏᴠᴇᴅ sᴜᴅᴏ ᴜsᴇʀ : `{target}`")
+            heroku_var["SUDO_USERS"] = new_sudo_users
+    else:
+        await event.reply("**❖ sᴏʀʀʏ, ᴏɴʟʏ ᴏᴡɴᴇʀ  ᴄᴀɴ ʀᴇᴍᴏᴠᴇ sᴜᴅᴏ**")
