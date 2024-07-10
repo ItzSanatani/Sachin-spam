@@ -215,7 +215,7 @@ async def helpback(event):
               ],
               [
                 Button.url("• ᴜᴘᴅᴀᴛᴇ •", "https://t.me/ALL_SANATANI_BOT"),
-                Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", "https://t.me/+cW07X2RM_IBmYTI1")
+                Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", "https://t.me/+Ckzm2ypQyIIzZTll")
               ]
             ]
           )
